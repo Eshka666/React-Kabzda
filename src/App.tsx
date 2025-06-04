@@ -1,31 +1,38 @@
 import "./App.css";
 
 function App() {
-  debugger;
   return (
     <div>
-      {" "}
-      This is APP component
+      <AppTitle />
       <Rating />
       <Accordion />
+      <Rating />
     </div>
   );
 }
 
 function Rating() {
-  debugger;
   return (
     <>
-      <div>Star</div>
-      <div>Star</div>
-      <div>Star</div>
-      <div>Star</div>
+      <Star />
+      <Star />
+      <Star />
+      <Star />
+      <Star />
     </>
   );
 }
 
+function Star() {
+  console.log("Star rendered");
+  return <div>Star</div>;
+}
+
+function AppTitle() {
+  return <div>This is APP component</div>;
+}
+
 function Accordion() {
-  debugger;
   return (
     <>
       <h3>Menu</h3>
