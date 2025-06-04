@@ -1,14 +1,23 @@
-export function Accordion() {
+type AccordionPropsType = {
+  titleValue: string;
+};
+
+export function Accordion(props: AccordionPropsType) {
   return (
     <>
-      <AccordionTitle />
+      <AccordionTitle title={props.titleValue} />
       <AccordionBody />
     </>
   );
 }
 
-function AccordionTitle() {
-  return <h3>Menu</h3>;
+type AccordionTitlePropsType = {
+  title: string;
+};
+
+function AccordionTitle(props: AccordionTitlePropsType) {
+  debugger;
+  return <h3>{props.title}</h3>;
 }
 
 function AccordionBody() {
